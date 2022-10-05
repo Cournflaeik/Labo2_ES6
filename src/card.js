@@ -26,7 +26,7 @@ export default class Card {
     card.dataset.number = counter;
     card.classList.add("bingo__card");
     card.id = `bingo_card-${counter}`;
-    document.querySelector(".bingo__cards").appendChild(card);
+    document.querySelector(".bingo__board").appendChild(card);
     // don't forget to append the child to to DOM
 
     // 🔥🔥🔥 TODO4: when we click an item, we want to check for winners and we want to save the selection to storage

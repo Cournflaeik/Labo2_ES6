@@ -50,9 +50,9 @@ export default class Bingo {
     // loop through all the cards in the array and create a new instance of a Card()
     this.cards.forEach((card, i) => {
       // create a new card object
-      let card = new Card(this.cards[i]);
+      let newCard = new Card(this.cards[i]);
       // render the card
-      card.render();
+      newCard.render();
     });
   }
 
