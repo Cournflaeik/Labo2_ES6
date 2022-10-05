@@ -13,7 +13,6 @@ export default class Card {
     console.log("Marking card as done");
     console.log(target);
     target.classList.toggle("bingo__card--done");
-    // hint: use class .bingo__card--done
   }
 
   render(counter) {
