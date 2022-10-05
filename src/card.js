@@ -12,6 +12,7 @@ export default class Card {
     // 🔥🔥🔥 TODO 5: mark or unmark (toggle) a bingo card when clicked
     console.log("Marking card as done");
     console.log(target);
+    target.classList.toggle("bingo__card--done");
     // hint: use class .bingo__card--done
   }
 
@@ -26,6 +27,7 @@ export default class Card {
     card.dataset.number = counter;
     card.classList.add("bingo__card");
     card.id = `bingo_card-${counter}`;
+    card.innerHTML = this.title;
     document.querySelector(".bingo__board").appendChild(card);
     // don't forget to append the child to to DOM
 
